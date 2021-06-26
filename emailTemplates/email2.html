@@ -327,8 +327,8 @@
 		}
 
 		.heading-section-white h2 {
-			font-family:
-				line-height: 1;
+			/* font-family: */
+			line-height: 1;
 			padding-bottom: 0;
 		}
 
@@ -349,7 +349,7 @@
 		/*BLOG*/
 		.blog-entry {
 			border: 1px solid red;
-			padding-bottom: 30px !important !important;
+			padding-bottom: 30px !important;
 		}
 
 		.text-blog .meta {
@@ -391,8 +391,23 @@
 		.feature-list li {
 			padding-bottom: 25px;
 		}
+		
+		.feature-list li ul li {
+			padding-bottom: 0;
+		}
+		
 
-		@media screen and (max-width: 500px) {}
+		.section-title {
+			border-top: 1px solid white;
+		}
+
+		/* adjustment for iphone x */
+		@media (min-width: 350px) and (max-width: 375px) {
+			.main-div {
+				width: 419px;
+			}
+		}
+		
 	</style>
 
 
@@ -400,7 +415,7 @@
 
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
 	<!-- <center style="width: 100%; background-color: #000000;"> -->
-	<div style="background-color: #000000;">
+	<div class="main-div" style="background-color: #000000;">
 		<div
 			style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
 			&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
@@ -415,7 +430,7 @@
 						<table>
 							<tr>
 								<td>
-									<div class="text" style="padding: 0 4em; text-align: center;">
+									<div class="text" style=" text-align: center;">
 										<!-- <h1 class="logo"><a href="#">MovieBreeze</a></h1> -->
 										<img align="center" alt="MovieBreeze"
 											src="https://moviebreeze.netlify.app/assets/logoBig.gif" width="100"
@@ -435,8 +450,12 @@
 						<div class="heading-section bg_white" style="text-align: center; padding: 10px 30px 0 30px ">
 							<h2>New features and faster</h2>
 						</div>
+						<div style="text-align: left; margin-bottom: 20px;">
+							Thanks for being a MovieBreeze user.  We've been working hard to add some big new features.  We've enhanced the movie details, the watchlist, and added some inspiration.  
+							Check out the new features:
+						</div>
 						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-							<h2>Improved Movie Details</h2>
+							<h2 class="section-title">Improved Movie Details</h2>
 							<tr>
 								<td style="padding-bottom: 30px;">
 									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -476,14 +495,16 @@
 							</tr>
 							<tr>
 								<td style="padding-bottom: 30px;">
-									<h2>Improved Streaming List</h2>
+									<h2  class="section-title">Improved Streaming List</h2>
 									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 										<td valign="top" width="55%">
 											<div class="text-blog" style="text-align: left; ">
 												<p>
 												<ul class="feature-list" style="color:white;">
-													<li><B>Service Groups</B> - ad supported, subscription, rentals,
-														buy, and cinema
+													<li><B>Service Groups</B> - Streaming services are now divided into groups: 
+														<ul><li>Ad supported</li>
+															<li>Rentals</li>
+														<li>Purchase</li><li>Cinema</li></ul>
 													</li>
 													<li><b>Prices</b> - Now includes prices for rentals and purchases
 													</li>
@@ -511,8 +532,8 @@
 				style="margin: auto;">
 				<tr>
 					<td class=" email-section">
-						<h2>Watchlist Filter</h2>
-						<h4>"Which movies are on my streaming services?"</h4>
+						<h2  class="section-title">Watchlist Filter</h2>
+						<h4>"Which movies on my watchlist are on one of my streaming services?"</h4>
 						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 							<h2></h2>
 							<tr>
@@ -546,7 +567,7 @@
 							</tr>
 							<tr>
 								<td style="padding-bottom: 30px;">
-									<h2>Inspirational Ideas</h2>
+									<h2 class="section-title">Inspirational Ideas</h2>
 									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 										<td valign="top" width="55%">
 											<div class="text-blog" style="text-align: left; ">
@@ -565,7 +586,7 @@
 							</tr>
 							<tr>
 								<td style="padding-bottom: 30px;">
-									<h2>Pardon Our Upgrade</h2>
+									<h2 class="section-title">Pardon Our Upgrade</h2>
 									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 										<td valign="middle" width="45%">
 											<img alt="" src="https://moviebreeze.netlify.app/assets/upgrading.png"	width="200" style="max-width:200px;">
