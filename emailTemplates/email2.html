@@ -388,6 +388,10 @@
 			list-style-type: none;
 		}
 
+		.feature-list.left {
+			padding-left:   0;
+		}
+
 		.feature-list li {
 			padding-bottom: 25px;
 		}
@@ -402,7 +406,7 @@
 		}
 
 		/* adjustment for iphone x */
-		@media (min-width: 350px) and (max-width: 375px) {
+		@media (min-width: 350px) and (max-width: 390px) {
 			.main-div {
 				width: 419px;
 			}
@@ -447,14 +451,14 @@
 				<tr>
 					<td class=" email-section">
 						<div class="heading-section bg_white" style="text-align: center; padding: 10px 30px 0 30px ">
-							<h2>New features and faster</h2>
+							<h2>New features <br/>Faster</h2>
 						</div>
 						<div style="text-align: left; margin-bottom: 20px;">
-							Thanks for being a MovieBreeze user. We've been working hard to add some big new features.
-							We've re-engineered it to be FASTER. We enhanced the movie details, the watchlist, and added
-							some inspiration.
-							Check out the new features:
+							Thanks for being a MovieBreeze user. We listened and made some improvements. We worked hard to add some big new features.
+							We also re-engineered it to be FASTER. We enhanced the movie details, the watchlist, and added
+							some inspiration.  Check out the new features.
 						</div>
+						<div style="margin-bottom: 5px;">- MovieBreeze Team</div>
 						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 							<h2 class="section-title">Improved Movie Details</h2>
 							<tr>
@@ -469,20 +473,26 @@
 												<p>
 												<ul class="feature-list">
 													<li><b>Trailers</b> -
-														<span class="explain">multiple movie trailers</span>
+														<span class="explain">multiple movie clips and trailers</span>
 													</li>
 													<li><b>Full Plot</b>-
-														<span class="explain">What
-															was that movie about? We explain the plot in detail.</span>
-														<span class="explain" style="font-size: 8px;color:yellow;">
-															<br />SPOILER
-															ALERT!</span>
+														<span class="explain">"What
+															was that movie about?"" We explain the plot in
+															detail.</span>
+														<span class="explain" style="font-size: 8px;color:yellow;text-align:center; font-size: 16px;">
+															<br />SPOILER ALERT!
+														</span>
 													</li>
 													<li><b>Discussions</b>
 														-
-														<span class="explain">Reddit discussions about the movie, wiki
-															link, search for an explanation of the plot, Soundtrack on
-															wiki and Spotify
+														<span class="explain">
+															<ul>
+																<li>Reddit discussions about the movie</li>
+																<li>Wiki Link</li>
+																<li>Google search to explain the plot</li>
+																<li>Wikipedia soundtrack</li>
+																<li>Spotify soundtrack</li>
+															</ul> 
 														</span>
 													</li>
 												</ul>
@@ -500,7 +510,7 @@
 										<td valign="top" width="55%">
 											<div class="text-blog" style="text-align: left; ">
 												<p>
-												<ul class="feature-list" style="color:white;">
+												<ul class="feature-list left" style="color:white;">
 													<li><B>Service Groups</B> - Streaming services are now divided into
 														groups:
 														<ul>
@@ -579,7 +589,9 @@
 										<td valign="top" width="55%">
 											<div class="text-blog" style="text-align: left; ">
 												<p>
-													We'll have great links and articles on new movies.
+													We'll have great links and articles on new movies.  
+													<br/><br />
+													Content will update regularly.
 												</p>
 												<!-- <p><a href="#" class="btn btn-primary">Read more</a></p> -->
 											</div>
@@ -595,12 +607,12 @@
 								<td style="padding-bottom: 30px;">
 									<h2 class="section-title">Pardon Our Upgrade</h2>
 									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-										<td valign="middle" width="45%">
+										<td valign="middle" width="55%">
 											<img alt="Upgrading"
 												src="https://moviebreeze.netlify.app/assets/upgrading.png" width="200"
 												style="max-width:200px;">
 										</td>
-										<td valign="middle" width="55%">
+										<td valign="middle" width="45%">
 											<div class="text-blog" style="text-align: left; ">
 												<p>
 													When you upgrade to 2.0 there will be an upgrade process that can
@@ -625,28 +637,28 @@
 					<td valign="middle" class="bg_black footer email-section">
 						<table>
 							<tr>
-								<td valign="top" width="33.333%" style="padding-top: 20px;">
+								<td valign="top"  style="padding-top: 20px;">
 									<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 										<tr>
-											<td style="text-align: left; padding-right: 10px;">
-												<h3 class="heading">About</h3>
+											<td style="text-align: left;">
+												<!-- <h3 class="heading">About</h3> -->
 												<p>MovieBreeze is a free app to look up movie details, add them to a
 													watchlist and recommend to friends.</p>
 											</td>
 										</tr>
 									</table>
 								</td>
-								<td valign="top" width="33.333%" style="padding-top: 20px;">
-									<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-										<tr>
-											<td style="text-align: left; padding-left: 5px; padding-right: 5px;">
-												<h3 class="heading">Contact Info</h3>
+								<td valign="top" width="35%" style="padding-top: 50px;">
+									<!-- <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"> -->
+										<!-- <tr> -->
+											<!-- <td style="text-align: left;"> -->
+												<!-- <h3 class="heading">Contact Info</h3> -->
 												<a href="mailto:support@moviebreeze.com">Email Us</a>
-											</td>
-										</tr>
-									</table>
+											<!-- </td> -->
+										<!-- </tr> -->
+									<!-- </table> -->
 								</td>
-								<td valign="top" width="33.333%" style="padding-top: 20px;">
+								<!-- <td valign="top" width="33.333%" style="padding-top: 20px;">
 									<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 										<tr>
 											<td style="text-align: left; padding-left: 10px;">
@@ -658,7 +670,7 @@
 											</td>
 										</tr>
 									</table>
-								</td>
+								</td> -->
 							</tr>
 						</table>
 					</td>
@@ -699,7 +711,8 @@
 									<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 										<tr>
 											<td style="text-align: right; padding-left: 5px; padding-right: 5px;">
-												<p><a href="%unsubscribe_url%" style="color: rgba(255,255,255,.4);">Unsubcribe</a></p>
+												<p><a href="%unsubscribe_url%"
+														style="color: rgba(255,255,255,.4);">Unsubcribe</a></p>
 											</td>
 										</tr>
 									</table>
